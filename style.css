@@ -68,6 +68,37 @@ img {
   padding: 0 40px;
 }
 
+/* Math game */
+.even {
+  color: red;
+}
+
+.odd {
+  color: blue;
+}
+
+.ol-even {
+  position: relative;
+  left: 200px;
+}
+.ol-odd {
+  position: relative;
+  left: 0px;
+}
+ol {
+  list-style-type: none;
+}
+li.odd {
+  display: block;
+  width: 20%;
+  float: left;
+}
+li.even {
+  display: block;
+  width: 20%;
+  float: left;
+}
+
 /* Nav bar*/
 .navbar {
   background-color: rgba(255, 255, 255, 0.8);
@@ -86,6 +117,7 @@ img {
   color: #0e003c;
   padding: 10px;
   margin: 0 5px;
+  font-size: larger;
 }
 
 .navbar ul a:hover {
@@ -96,7 +128,24 @@ img {
   justify-content: space-between;
 }
 
+#visitor {
+  font-size: small;
+}
+
 /* button */
+#btn-alert,
+#btn-counter {
+  background-color: #04aa6d;
+  border: none;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 .btn {
   display: inline-block;
   padding: 10px 30px;
@@ -115,12 +164,28 @@ img {
 }
 
 /* for each section */
+
 .motto {
   height: 590px;
   background-color: #e485df;
   color: #fff;
   position: relative;
   margin: 40px 0;
+}
+.main {
+  height: 790px;
+  background-color: #e485df;
+  color: #fff;
+  position: relative;
+  margin: 90px 0;
+}
+.challenge {
+  height: 890px;
+  background-color: #81b013;
+  color: #fff;
+  position: relative;
+  margin: 40px 0;
+  display: none;
 }
 .oreo {
   height: 890px;
@@ -204,7 +269,7 @@ img {
 
 .motto .grid {
   overflow: visible;
-  grid-template-columns: 55% auto;
+  grid-template-columns: 75% auto;
   gap: 30px;
 }
 
@@ -295,10 +360,33 @@ img {
     grid-template-rows: 1fr;
   }
 
+  .navbar {
+    height: 110px;
+  }
+  .navbar a {
+    color: #0e003c;
+    padding: 5px;
+    margin: 0 5px;
+    font-size: small;
+  }
   .motto {
     height: auto;
   }
-
+  .challenge {
+    height: 890px;
+    background-color: #81b013;
+    color: #fff;
+    position: relative;
+    margin: 40px 0;
+    display: none;
+  }
+  .main {
+    height: 790px;
+    background-color: #e485df;
+    color: #fff;
+    position: relative;
+    margin: 130px 0;
+  }
   .motto-text {
     text-align: center;
     margin-top: 40px;
@@ -325,9 +413,14 @@ img {
 /* Mobile */
 @media (max-width: 500px) {
   .navbar {
-    height: 110px;
+    height: 210px;
   }
-
+  .navbar a {
+    color: #0e003c;
+    padding: 10px;
+    margin: 0 5px;
+    font-size: small;
+  }
   .navbar .flex {
     flex-direction: column;
   }
@@ -335,6 +428,15 @@ img {
   .navbar ul {
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .challenge {
+    height: 890px;
+    background-color: #81b013;
+    color: #fff;
+    position: relative;
+    margin: 40px 0;
+    display: none;
   }
   .motto-pic {
     width: 300px;

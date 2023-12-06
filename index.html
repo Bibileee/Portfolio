@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Danbi Lee</title>
+    <script defer src="script.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
@@ -22,6 +23,8 @@
       <div class="navbar" width="100%">
         <div class="container flex">
           <h1>Bee Happy</h1>
+          <p id="visitor"></p>
+          <button id="btn-alert">Got it!</button>
           <nav>
             <ul>
               <li><a href="#motto">About</a></li>
@@ -35,7 +38,19 @@
     </header>
 
     <main>
-      <section class="motto" id="motto">
+      <section class="motto challenge" id="challenge">
+        <div class="container grid">
+          <div class="motto-text">
+            <h1>OK! you want some math game!</h1>
+            <p>First game: see how many times you can click on me!</p>
+            <button id="btn-counter">Try to click me as fast as you can</button>
+            <p id="txt-counter">Start clicking now!</p>
+            <ol id="hundredNum"></ol>
+          </div>
+        </div>
+      </section>
+
+      <section class="motto main" id="motto">
         <div class="container grid">
           <div class="motto-text">
             <h1>My motto - Bee Happy</h1>
@@ -235,7 +250,7 @@
       <div class="container grid grid-3">
         <div>
           <h1>Danbi Lee</h1>
-          <p>Copyright &copy; 2023</p>
+          <p id="copyright"></p>
         </div>
 
         <div class="social">
